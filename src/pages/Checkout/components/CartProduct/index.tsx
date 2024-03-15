@@ -9,7 +9,7 @@ import {
   CartProductPrice,
 } from "./styles";
 import { Input } from "../../../../components/Input";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../../../../contexts/CartContext";
 
 export interface CartProduct {
@@ -27,6 +27,7 @@ export function CartProduct({
   price,
   quantity,
 }: CartProduct) {
+  const [quantityValue, setQuantityValue] = useState(quantity);
   const {
     increaseProductQuantity,
     decreaseProductQuantity,
@@ -39,13 +40,15 @@ export function CartProduct({
     .replace(".", ",");
 
   function handleIncreaseProductQuantity() {
-    if (quantity < 99) {
+    if (quantityValue < 99) {
+      setQuantityValue((state) => state + 1);
       increaseProductQuantity(id);
     }
   }
 
   function handleDecreaseProductQuantity() {
-    if (quantity > 1) {
+    if (quantityValue > 1) {
+      setQuantityValue((state) => state - 1);
       decreaseProductQuantity(id);
     }
   }
@@ -66,7 +69,7 @@ export function CartProduct({
             />
             <Input.Field
               type="number"
-              value={quantity}
+              value={quantityValue}
               step={1}
               min={1}
               max={99}
