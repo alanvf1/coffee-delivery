@@ -4,7 +4,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "1",
     name: "Expresso Tradicional",
-    imgUrl: "/src/assets/expresso-tradicional.svg",
+    imgUrl: "/expresso-tradicional.svg",
     tags: ["tradicional"],
     description: "O tradicional café feito com água quente e grãos moídos",
     price: 9.9,
@@ -12,7 +12,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "2",
     name: "Expresso Americano",
-    imgUrl: "/src/assets/expresso-americano.svg",
+    imgUrl: "/expresso-americano.svg",
     tags: ["tradicional"],
     description: "Expresso diluído, menos intenso que o tradicional",
     price: 9.9,
@@ -20,7 +20,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "3",
     name: "Expresso Cremoso",
-    imgUrl: "/src/assets/expresso-cremoso.svg",
+    imgUrl: "/expresso-cremoso.svg",
     tags: ["tradicional"],
     description: "Café expresso tradicional com espuma cremosa",
     price: 9.9,
@@ -28,7 +28,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "4",
     name: "Expresso Gelado",
-    imgUrl: "/src/assets/expresso-gelado.svg",
+    imgUrl: "/expresso-gelado.svg",
     tags: ["tradicional", "gelado"],
     description: "Bebida preparada com café expresso e cubos de gelo",
     price: 9.9,
@@ -36,7 +36,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "5",
     name: "Café com Leite",
-    imgUrl: "/src/assets/cafe-com-leite.svg",
+    imgUrl: "/cafe-com-leite.svg",
     tags: ["tradicional", "com leite"],
     description: "Meio a meio de expresso tradicional com leite vaporizado",
     price: 9.9,
@@ -44,7 +44,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "6",
     name: "Latte",
-    imgUrl: "/src/assets/latte.svg",
+    imgUrl: "/latte.svg",
     tags: ["tradicional", "com leite"],
     description:
       "Uma dose de café expresso com o dobro de leite e espuma cremosa",
@@ -53,7 +53,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "7",
     name: "Capuccino",
-    imgUrl: "/src/assets/capuccino.svg",
+    imgUrl: "/capuccino.svg",
     tags: ["tradicional", "com leite"],
     description:
       "Bebida com canela feita de doses iguais de café, leite e espuma",
@@ -62,7 +62,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "8",
     name: "Macchiato",
-    imgUrl: "/src/assets/macchiato.svg",
+    imgUrl: "/macchiato.svg",
     tags: ["tradicional", "com leite"],
     description:
       "Café expresso misturado com um pouco de leite quente e espuma",
@@ -71,7 +71,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "9",
     name: "Mocaccino",
-    imgUrl: "/src/assets/mocaccino.svg",
+    imgUrl: "/mocaccino.svg",
     tags: ["tradicional", "com leite"],
     description: "Café expresso com calda de chocolate, pouco leite e espuma",
     price: 9.9,
@@ -79,7 +79,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "10",
     name: "Chocolate Quente",
-    imgUrl: "/src/assets/chocolate-quente.svg",
+    imgUrl: "/chocolate-quente.svg",
     tags: ["especial", "com leite"],
     description: "Bebida feita com chocolate dissolvido no leite quente e café",
     price: 9.9,
@@ -87,7 +87,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "11",
     name: "Cubano",
-    imgUrl: "/src/assets/cubano.svg",
+    imgUrl: "/cubano.svg",
     tags: ["especial", "alcoólico", "gelado"],
     description:
       "Drink gelado de café expresso com rum, creme de leite e hortelã",
@@ -96,7 +96,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "12",
     name: "Havaiano",
-    imgUrl: "/src/assets/havaiano.svg",
+    imgUrl: "/havaiano.svg",
     tags: ["especial"],
     description: "Bebida adocicada preparada com café e leite de coco",
     price: 9.9,
@@ -104,7 +104,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "13",
     name: "Árabe",
-    imgUrl: "/src/assets/arabe.svg",
+    imgUrl: "/arabe.svg",
     tags: ["especial"],
     description: "Bebida preparada com grãos de café árabe e especiarias",
     price: 9.9,
@@ -112,7 +112,7 @@ export const coffeeList: CoffeeProps[] = [
   {
     id: "14",
     name: "Irlandês",
-    imgUrl: "/src/assets/irlandes.svg",
+    imgUrl: "/irlandes.svg",
     tags: ["especial", "alcoolico"],
     description: "Bebida a base de café, uísque irlandês, açúcar e chantilly",
     price: 9.9,
