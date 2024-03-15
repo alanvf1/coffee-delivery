@@ -11,7 +11,7 @@ import {
   CheckoutTitle,
 } from "./styles";
 import { CartProduct } from "./components/CartProduct";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
 import { formatPrice } from "../../utils/formatPrice";
 import { FormProvider, useForm } from "react-hook-form";
