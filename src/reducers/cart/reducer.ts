@@ -41,7 +41,7 @@ export function CartReducer(state: CartState, action: any) {
         cartProducts: [
           ...state.cartProducts.map((cartProduct) => {
             if (cartProduct.id === receivedProductId) {
-              return { ...cartProduct, quantity: cartProduct.quantity++ };
+              return { ...cartProduct, quantity: cartProduct.quantity + 1 };
             } else {
               return cartProduct;
             }
@@ -52,13 +52,12 @@ export function CartReducer(state: CartState, action: any) {
 
     case ActionTypes.DECREASE_PRODUCT_QUANTITY: {
       const receivedProductId = action.payload.productId;
-
       return {
         ...state,
         cartProducts: [
           ...state.cartProducts.map((cartProduct) => {
             if (cartProduct.id === receivedProductId) {
-              return { ...cartProduct, quantity: cartProduct.quantity-- };
+              return { ...cartProduct, quantity: cartProduct.quantity - 1 };
             } else {
               return cartProduct;
             }

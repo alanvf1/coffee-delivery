@@ -48,6 +48,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     dispatch(increaseProductQuantityAction(productId));
   }
   function decreaseProductQuantity(productId: string) {
+    console.log("chama context");
     dispatch(decreaseProductQuantityAction(productId));
   }
 
