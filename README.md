@@ -2,7 +2,7 @@
 
 A React App to manage a shopping cart for a fictional Coffee Shop.
  
-For this project, I used some React fundamentals such as contexts, reducers, as well as powerful libraries such as styled-components, react-hook-form and zod
+For this project, I used some React fundamentals such as contexts, reducers, as well as powerful libraries such as styled-components, react-hook-form and zod.
 
 ## Steps to run app on your local
 
