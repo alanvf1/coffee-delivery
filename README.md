@@ -1,4 +1,4 @@
-# ReactJS To-Do List
+# Coffee Delivery
 
 A React App to manage a shopping cart for a fictional Coffee Shop.
  
