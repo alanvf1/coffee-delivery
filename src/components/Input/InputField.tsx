@@ -1,4 +1,4 @@
-import { ComponentProps, InputHTMLAttributes, Ref, forwardRef } from "react";
+import { ComponentProps, Ref, forwardRef } from "react";
 import { InputFieldContainer } from "./styles";
 
 interface InputFieldProps extends ComponentProps<"input"> {

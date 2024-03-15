@@ -79,7 +79,6 @@ export function CartReducer(state: CartState, action: any) {
       };
     }
     case ActionTypes.EMPTY_CART: {
-      console.log("está chegando aqui");
       return {
         ...state,
         cartProducts: [],
