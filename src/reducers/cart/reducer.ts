@@ -5,16 +5,25 @@ export interface CartState {
   cartProducts: CartProduct[];
 }
 
-export function CartReducer(state: CartState, action: any) {
+interface ActionProps {
+  type: string
+  payload?: {
+    product?: CartProduct
+    productId?: string
+  }
+}
+
+
+export function CartReducer(state: CartState, action: ActionProps) {
   switch (action.type) {
     case ActionTypes.ADD_PRODUCT_TO_CART: {
-      const receivedCartProduct = action.payload.product;
-      const receivedCartProductId = receivedCartProduct.id;
+      const receivedCartProduct = action.payload?.product;
+      const receivedCartProductId = receivedCartProduct?.id;
       const hasSameProductOnCart = state.cartProducts?.some(
         (cartProduct) => cartProduct.id === receivedCartProductId
       );
       const newCartProducts = state.cartProducts.map((cartProduct) => {
-        if (cartProduct.id === receivedCartProductId) {
+        if (cartProduct.id === receivedCartProductId &&receivedCartProduct) {
           return {
             ...cartProduct,
             quantity: cartProduct.quantity + receivedCartProduct.quantity,
@@ -24,7 +33,7 @@ export function CartReducer(state: CartState, action: any) {
         }
       });
 
-      if (!hasSameProductOnCart) {
+      if (!hasSameProductOnCart && receivedCartProduct) {
         newCartProducts.push(receivedCartProduct);
       }
 
@@ -34,7 +43,7 @@ export function CartReducer(state: CartState, action: any) {
       };
     }
     case ActionTypes.INCREASE_PRODUCT_QUANTITY: {
-      const receivedProductId = action.payload.productId;
+      const receivedProductId = action.payload?.productId;
 
       return {
         ...state,
@@ -51,7 +60,7 @@ export function CartReducer(state: CartState, action: any) {
     }
 
     case ActionTypes.DECREASE_PRODUCT_QUANTITY: {
-      const receivedProductId = action.payload.productId;
+      const receivedProductId = action.payload?.productId;
       return {
         ...state,
         cartProducts: [
@@ -66,7 +75,7 @@ export function CartReducer(state: CartState, action: any) {
       };
     }
     case ActionTypes.REMOVE_PRODUCT_FROM_CART: {
-      const receivedProductId = action.payload.productId;
+      const receivedProductId = action.payload?.productId;
 
       return {
         ...state,
